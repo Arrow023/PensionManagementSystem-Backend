@@ -16,7 +16,7 @@ COPY ["PensionManagementSystem.Data/PensionManagementSystem.Data.csproj", "Pensi
 WORKDIR /src
 COPY ["PensionManagementSystem.Models/PensionManagementSystem.Models.csproj", "PensionManagementSystem.Models/"]
 
-RUN dotnet restore "Pension Management System/Process Pension Module.csproj"
+RUN dotnet restore "Process Pension Module/Process Pension Module.csproj"
 RUN dotnet restore "PensionManagementSystem.Data/PensionManagementSystem.Data.csproj"
 RUN dotnet restore "PensionManagementSystem.Models/PensionManagementSystem.Models.csproj"
 
