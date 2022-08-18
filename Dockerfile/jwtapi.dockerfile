@@ -10,15 +10,15 @@ EXPOSE 2000
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["JWTAuthentication/JWTAuthentication.csproj", "JWTAuthentication/"]
+COPY ["../JWTAuthentication/JWTAuthentication.csproj", "JWTAuthentication/"]
 WORKDIR /src
-COPY ["./PensionManagementSystem.Data/PensionManagementSystem.Data.csproj", "PensionManagementSystem.Data/"]
+COPY ["../PensionManagementSystem.Data/PensionManagementSystem.Data.csproj", "PensionManagementSystem.Data/"]
 WORKDIR /src
-COPY ["./PensionManagementSystem.Models/PensionManagementSystem.Models.csproj", "PensionManagementSystem.Models/"]
+COPY ["../PensionManagementSystem.Models/PensionManagementSystem.Models.csproj", "PensionManagementSystem.Models/"]
 
-RUN dotnet restore "JWTAuthentication/JWTAuthentication.csproj"
-RUN dotnet restore "PensionManagementSystem.Data/PensionManagementSystem.Data.csproj"
-RUN dotnet restore "PensionManagementSystem.Models/PensionManagementSystem.Models.csproj"
+RUN dotnet restore "../JWTAuthentication/JWTAuthentication.csproj"
+RUN dotnet restore "../PensionManagementSystem.Data/PensionManagementSystem.Data.csproj"
+RUN dotnet restore "../PensionManagementSystem.Models/PensionManagementSystem.Models.csproj"
 COPY . .
 WORKDIR "/src/JWTAuthentication"
 RUN dotnet build "JWTAuthentication.csproj" -c Release -o /app/build
