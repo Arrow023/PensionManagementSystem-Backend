@@ -18,11 +18,11 @@ spec:
     spec:
       containers:
         - name: jwtapi
-          image: jwtauthenticationcr.azurecr.io/jwtauthimage:latest
+          image: pensionmanagementsystemcr.azurecr.io/jwtauthimage:latest
           ports:
             - containerPort: 80
       imagePullSecrets:
-        - name: jwtauthsvcsecret
+        - name: pmssecret
 
 ---
 #JWT Service 
@@ -60,7 +60,7 @@ spec:
     spec:
       containers:
         - name: processpensionapi
-          image: jwtauthenticationcr.azurecr.io/processpensionimage:latest
+          image: pensionmanagementsystemcr.azurecr.io/processpensionimage:latest
           ports:
             - containerPort: 80
       imagePullSecrets:
@@ -102,7 +102,7 @@ spec:
     spec:
       containers:
         - name: pensionerdetailsapi
-          image: jwtauthenticationcr.azurecr.io/pensionerdetailsimage:latest
+          image: pensionmanagementsystemcr.azurecr.io/pensionerdetailsimage:latest
           ports:
             - containerPort: 80
       imagePullSecrets:

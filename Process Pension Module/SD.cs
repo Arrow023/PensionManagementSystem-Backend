@@ -2,6 +2,6 @@
 {
     public static class SD
     {
-        public readonly static string PensionerDetailUrl = "https://localhost:7164/api/PensionerDetail";
+        public readonly static string PensionerDetailUrl = "http://pensionerdetailsservice.default.svc.cluster.local:2002/api/PensionerDetail";
     }
 }
