@@ -12,8 +12,8 @@ using PensionManagementSystem.Data;
 namespace JWTAuthentication.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220810105057_SeedData")]
-    partial class SeedData
+    [Migration("20220818174918_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -134,10 +134,10 @@ namespace JWTAuthentication.Migrations
                         new
                         {
                             UserId = 1,
-                            AadhaarNumber = 1234567898012L,
+                            AadhaarNumber = 123456789012L,
                             Allowances = 5000.0,
                             BankId = 1,
-                            DateOfBirth = new DateTime(2022, 8, 10, 16, 20, 57, 457, DateTimeKind.Local).AddTicks(7615),
+                            DateOfBirth = new DateTime(2022, 8, 18, 23, 19, 18, 392, DateTimeKind.Local).AddTicks(2495),
                             Name = "User one",
                             PAN = "PAN9876543",
                             SalaryEarned = 30000.0,
@@ -146,10 +146,10 @@ namespace JWTAuthentication.Migrations
                         new
                         {
                             UserId = 2,
-                            AadhaarNumber = 1234567898013L,
+                            AadhaarNumber = 123456789013L,
                             Allowances = 4500.0,
                             BankId = 2,
-                            DateOfBirth = new DateTime(2022, 8, 11, 16, 20, 57, 457, DateTimeKind.Local).AddTicks(7633),
+                            DateOfBirth = new DateTime(2022, 8, 19, 23, 19, 18, 392, DateTimeKind.Local).AddTicks(2508),
                             Name = "User two",
                             PAN = "PAN7894562",
                             SalaryEarned = 32000.0,
