@@ -1,0 +1,126 @@
+#JWT Deployment
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jwtdeployment
+  labels:
+    app: jwtapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jwtapi
+  template:
+    metadata:
+      labels:
+        app: jwtapi
+    spec:
+      containers:
+        - name: jwtapi
+          image: jwtauthenticationcr.azurecr.io/jwtauthimage:latest
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: jwtauthsvcsecret
+
+---
+#JWT Service 
+
+apiVersion: v1
+kind: Service
+metadata: 
+  name: jwtservice
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 2000
+      targetPort: 80
+  selector:
+    app: jwtapi
+
+---
+#Process Pension Deployment
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: processpensiondeployment
+  labels:
+    app: processpensionapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: processpensionapi
+  template:
+    metadata:
+      labels:
+        app: processpensionapi
+    spec:
+      containers:
+        - name: processpensionapi
+          image: jwtauthenticationcr.azurecr.io/processpensionimage:latest
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: jwtauthsvcsecret
+
+---
+#Process Pension Service
+
+apiVersion: v1
+kind: Service
+metadata: 
+  name: processpensionservice
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 2001
+      targetPort: 80
+  selector:
+    app: processpensionapi
+
+---
+#Pensioner Detail Deployment
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pensionerdetailsdeployment
+  labels:
+    app: pensionerdetailsapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pensionerdetailsapi
+  template:
+    metadata:
+      labels:
+        app: pensionerdetailsapi
+    spec:
+      containers:
+        - name: pensionerdetailsapi
+          image: jwtauthenticationcr.azurecr.io/pensionerdetailsimage:latest
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: jwtauthsvcsecret
+
+---
+#Pensioner Details Service
+
+apiVersion: v1
+kind: Service
+metadata: 
+  name: pensionerdetailsservice
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 2002
+      targetPort: 80
+  selector:
+    app: pensionerdetailsapi
+  
+    

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Process Pension Module", "Process Pension Module\Process Pension Module.csproj", "{186123A4-80E7-4894-9A0E-BDD77AC74E81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PensionManagementSystem.Models", "PensionManagementSystem.Models\PensionManagementSystem.Models.csproj", "{8845367E-73E3-4393-95AB-65D81CE10BF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PensionManagementSystem.Data", "PensionManagementSystem.Data\PensionManagementSystem.Data.csproj", "{B50E0CB9-9C79-4F65-957F-B863AB814C87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pensioner Detail Module", "Pensioner Detail Module\Pensioner Detail Module.csproj", "{583DB81F-9CBD-4E77-9B27-07A6C7686293}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JWTAuthentication", "JWTAuthentication\JWTAuthentication.csproj", "{C5824C26-09BB-4AA7-A515-4FBC07A80CFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PensionManagementSystem.Test", "PensionManagementSystem.Test\PensionManagementSystem.Test.csproj", "{FD5B4AA8-A3AE-4011-8D29-A8D7AA550691}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{186123A4-80E7-4894-9A0E-BDD77AC74E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{186123A4-80E7-4894-9A0E-BDD77AC74E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{186123A4-80E7-4894-9A0E-BDD77AC74E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{186123A4-80E7-4894-9A0E-BDD77AC74E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8845367E-73E3-4393-95AB-65D81CE10BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8845367E-73E3-4393-95AB-65D81CE10BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8845367E-73E3-4393-95AB-65D81CE10BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8845367E-73E3-4393-95AB-65D81CE10BF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B50E0CB9-9C79-4F65-957F-B863AB814C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50E0CB9-9C79-4F65-957F-B863AB814C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50E0CB9-9C79-4F65-957F-B863AB814C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50E0CB9-9C79-4F65-957F-B863AB814C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583DB81F-9CBD-4E77-9B27-07A6C7686293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583DB81F-9CBD-4E77-9B27-07A6C7686293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583DB81F-9CBD-4E77-9B27-07A6C7686293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583DB81F-9CBD-4E77-9B27-07A6C7686293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5824C26-09BB-4AA7-A515-4FBC07A80CFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5824C26-09BB-4AA7-A515-4FBC07A80CFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5824C26-09BB-4AA7-A515-4FBC07A80CFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5824C26-09BB-4AA7-A515-4FBC07A80CFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD5B4AA8-A3AE-4011-8D29-A8D7AA550691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5B4AA8-A3AE-4011-8D29-A8D7AA550691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5B4AA8-A3AE-4011-8D29-A8D7AA550691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5B4AA8-A3AE-4011-8D29-A8D7AA550691}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BD32623-598E-40D6-AAC3-8C4722B99748}
+	EndGlobalSection
+EndGlobal
