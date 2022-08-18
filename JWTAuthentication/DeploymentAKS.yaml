@@ -64,7 +64,7 @@ spec:
           ports:
             - containerPort: 80
       imagePullSecrets:
-        - name: jwtauthsvcsecret
+        - name: pmssecret
 
 ---
 #Process Pension Service
@@ -106,7 +106,7 @@ spec:
           ports:
             - containerPort: 80
       imagePullSecrets:
-        - name: jwtauthsvcsecret
+        - name: pmssecret
 
 ---
 #Pensioner Details Service
