@@ -1,3 +1,0 @@
-jwtauthimage:latest
-processpensionimage:latest
-pensionerdetailsimage:latest
